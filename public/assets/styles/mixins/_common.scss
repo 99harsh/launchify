@@ -1,0 +1,18 @@
+@mixin flex-center($justify: center, $align: center, $direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+  }
+  
+  @mixin font-style($font-size: $font-size-medium, $font-family: $roboto-regular, $color: $primary-black){
+    color: $color;
+    font-size: $font-size;
+    font-family: $font-family;
+  }
+  
+  @mixin box-shadow(){
+    -webkit-box-shadow: 0 0 5px -2px #000000bf;
+    -moz-box-shadow: 0 0 5px -2px #000000bf;
+    box-shadow: 0 0 5px -2px #000000bf;
+  }

@@ -1,0 +1,17 @@
+@import "./mixins/_responsive.scss";
+@import "./mixins/_common.scss";
+
+@import "./_fonts.scss";
+@import "./variables/_fonts.scss";
+@import "./variables/_colors.scss";
+
+html {
+    font-family: $inter-regular !important;
+    @include fluid-type(320px, 1920px, 2560px, 10px, 16px, 20px);
+}
+
+body{
+    margin: 0px;
+    background-color: $surface-200;
+    color: $white;
+}                         

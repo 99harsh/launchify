@@ -1,0 +1,28 @@
+@import "../../../../public/assets/styles/variables/colors";
+.lfy-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .875rem 2rem;
+    background-color: $black;
+    border-bottom: 1px solid $surface-200;
+    .lfy-logo-container{
+        .lfy-logo-text{
+            font-size: 1.5rem;
+            color: $white;
+        }
+    }
+
+    .lfy-header-actions-container{
+
+        .lfy-header-action-item{
+            color: $primary-500;
+            height: 100%;
+            border: 1px solid #fff !important;
+            top: 0px !important;
+            padding: 8px !important;
+            border-radius: 5px !important;
+            color: #A688FAFF;
+        }   
+    }
+}

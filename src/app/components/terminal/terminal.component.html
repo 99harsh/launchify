@@ -1,0 +1,26 @@
+<div class="lfy-terminal-container">
+    <div class="lfy-terminal-header">
+        <div class="lfy-traffic-lights">
+            <span class="lfy-close"></span>
+            <span class="lfy-minimize"></span>
+            <span class="lfy-maximize"></span>
+        </div>
+        <div class="lfy-title">bash - zsh</div>
+    </div>
+    <div class="lfy-terminal-body" (click)="focusInput()">
+        <div class="lfy-terminal-body-content">
+            <span class="lfy-prompt">Harsh&#64;MacBook-Air ~ %</span> echo "Ready to Go Live?"
+        </div>
+        <div class="lfy-terminal-body-content">
+            <span class="lfy-output">Heck Yes!</span>
+        </div>
+        <div class="lfy-terminal-body-content">
+            <span class="lfy-prompt">Harsh&#64;MacBook-Air ~ %</span>
+            <span class="lfy-input-wrapper">
+                <input #terminalInput type="text" class="lfy-input" [ngModel]="inputContent"
+                    (ngModelChange)="handleInput($event)" (keydown)="handleKeyDown($event)" autocomplete="off"
+                    autofocus="true" spellcheck="false">
+            </span>
+        </div>
+    </div>
+</div>

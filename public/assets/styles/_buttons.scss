@@ -1,0 +1,44 @@
+@import './variables/colors';
+
+.lfy-mainpage-button {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 0.8125rem 1.25rem 0.8125rem;
+    outline: 0;
+    border: 1px solid $white;
+    color: $white;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+    &:after {
+        content: "";
+        background-color: $primary-200;
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        height: 100%;
+        top: 0.4375rem;
+        left: 0.4375rem;
+        transition: 0.2s;
+    }
+
+    &:hover {
+        &:after {
+            top: 0px;
+            left: 0px;
+        }
+    }
+   
+}
+
+@media (min-width: 768px) {
+    .lfy-mainpage-button {
+        padding: 0.8125rem 3.125rem 0.8125rem;
+    }
+}
+
+
